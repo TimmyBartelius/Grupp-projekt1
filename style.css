@@ -4,3 +4,26 @@
     margin: 0;
     font-family: "Roboto Mono", monospace;
 }
+
+body {
+    max-width: 1440px;
+    margin: auto;
+}
+
+li {
+    list-style: none;
+}
+
+/* Menu */
+
+.menu {
+    display: flex;
+    background-color: #333336;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul {
+    display: flex;
+    gap: 1rem;
+}
