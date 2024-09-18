@@ -87,13 +87,15 @@ button:hover {
 .about section:nth-child(2n) {
   flex-direction: row-reverse;
 }
-/* Advertisment */
-.advertisment {
-display: grid; 
-grid-template-columns: 50% 50%;
-border: 1px solid hotpink;
+
+/* Home-page */
+
+.advertisement {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border: 2px solid var(--primary-color);
 }
-.advertisment div {
-border: 1px solid black;
-height: 10em;
+.advertisement div {
+  border: 2px solid var(--primary-color);
+  height: 10em;
 }
