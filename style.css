@@ -5,6 +5,12 @@
     font-family: "Roboto Mono", monospace;
 }
 
+:root {
+    --primary-color: #333;
+    --secondary-color: #3498db;
+    --font-color: #fff;
+}
+
 body {
     max-width: 1440px;
     margin: auto;
@@ -14,16 +20,39 @@ li {
     list-style: none;
 }
 
+button {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    color: var(--font-color);
+}
+button:hover {
+    background-color: var(--font-color);
+    color: var(--secondary-color);
+}
+
 /* Menu */
 
 .menu {
     display: flex;
-    background-color: #333336;
-    color: white;
-    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    justify-content: space-around;
     align-items: center;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
-.menu ul {
+.menu ul, .menu div {
     display: flex;
     gap: 1rem;
+}
+.menu a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.menu img {
+    height: 2rem;
 }
