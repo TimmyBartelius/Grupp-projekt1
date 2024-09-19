@@ -130,6 +130,57 @@ button:hover {
   height: 10em;
 }
 
+/* Product Page */
+.Products{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20%;
+  flex-wrap: wrap;
+  
+}
+.Produkt1{
+  padding: 10%;
+  border: 3px solid black;
+  margin-bottom: 10%;
+}
+.Produkt2{
+  padding: 10%;
+  border: 3px solid black;
+  margin-bottom: 10%;
+}
+.Produkt3{
+  padding: 10%;
+  border: 3px solid black;
+  margin-bottom: 10%;
+}
+.Lista{
+  margin: 10%;
+}
+.pris1{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.pris2{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.pris3{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.bild1{
+  min-block-size: 1;
+  max-block-size: 5;
+}
+.bild2{
+  min-block-size: 1;
+  max-block-size: 5;
+}
+.bild3{
+  min-block-size: 1;
+  max-block-size: 5;
+}
+
 /* Media Query */
 
 @media (max-width: 1440px) {
@@ -150,3 +201,4 @@ button:hover {
     text-align: center;
   }
 }
+
