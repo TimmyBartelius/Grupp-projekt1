@@ -140,10 +140,37 @@ button:hover {
 
 .advertisement {
   display: grid;
-  grid-template-columns: 50% 50%;
-  border: 2px solid var(--primary-color);
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
 }
 .advertisement div {
   border: 2px solid var(--primary-color);
-  height: 10em;
+  height: 15em;
+}
+.advertisement div:first-child {
+	grid-column: span 2;
+}
+.new-meta-quest {
+	background-image: url("https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/09/meta-quest-3-price-release-date-gamerant.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.new-meta-quest p {
+	color: var(--font-color);
+}
+.mega-sale {
+	background-image: url("https://lookaside.fbsbx.com/elementpath/media/?media_id=1425009258200128&version=1723072175&transcode_extension=webp");
+	background-size: cover;
+	background-position: center;
+}
+.mega-sale p {
+	color: var(--primary-color);
+}
+.latest-game {
+	background-image: url("https://images.squarespace-cdn.com/content/v1/61813b3361b99650be1a2c4c/08e6d8a7-b50b-44c1-af8c-1692a40e8d0f/bait_hero_art_2500x865%2B%283%29.jpeg");
+	background-size: cover;
+	background-position: center;
+}
+.latest-game p {
+	color: var(--font-color);
 }
