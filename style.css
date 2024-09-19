@@ -6,13 +6,12 @@
 }
 
 :root {
-  --primary-color: #333;
-  --secondary-color: #3498db;
+  --primary-color: #d7dded;
+  --secondary-color: #0c1427;
   --font-color: #fff;
 }
 
 body {
-  background-color: #e6e6e6;
   border-left: 2px solid var(--primary-color);
   border-right: 2px solid var(--primary-color);
   max-width: 1440px;
@@ -21,15 +20,10 @@ body {
   font-size: clamp(0.8rem, 0.8571428571428572rem + 0.7142857142857143vw, 1.25rem);
   box-shadow: -10px 0 20px rgba(0, 0, 0, 0.2), 10px 0 20px rgba(0, 0, 0, 0.2);
 }
-@media (max-width: 1440px) {
-  body {
-    border: none;
-  }
-}
 
 main {
   padding: 5rem 2rem;
-  background-color: white;
+  background-color: var(--primary-color);
   min-height: 100vh;
 }
 
@@ -50,7 +44,7 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background-color: var(--font-color);
+  background-color: var(--primary-color);
   color: var(--secondary-color);
 }
 
@@ -58,8 +52,8 @@ button:hover {
 
 .menu {
   display: flex;
-  background-color: var(--primary-color);
   color: var(--font-color);
+  background-color: var(--secondary-color);
   justify-content: space-around;
   align-items: center;
   padding: 0.5rem;
@@ -77,7 +71,7 @@ button:hover {
   gap: 1.5rem;
 }
 .menu a {
-  color: white;
+  color: var(--font-color);
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 2px;
@@ -98,9 +92,9 @@ button:hover {
   width: 90%;
   max-width: 400px;
   border-radius: 50%;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--secondary-color);
 }
-.about section {
+.about section:not(:first-of-type) {
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -124,6 +118,26 @@ button:hover {
   max-width: 650px;
 }
 
+/* Home-page */
+
+.advertisement {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border: 2px solid var(--primary-color);
+}
+.advertisement div {
+  border: 2px solid var(--primary-color);
+  height: 10em;
+}
+
+/* Media Query */
+
+@media (max-width: 1440px) {
+  body {
+    border: none;
+  }
+}
+
 @media (max-width: 1000px) {
   .about section,
   .about section:nth-child(2n) {
@@ -135,15 +149,4 @@ button:hover {
   .about div p {
     text-align: center;
   }
-}
-/* Home-page */
-
-.advertisement {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  border: 2px solid var(--primary-color);
-}
-.advertisement div {
-  border: 2px solid var(--primary-color);
-  height: 10em;
 }
