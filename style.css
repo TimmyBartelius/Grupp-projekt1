@@ -267,3 +267,142 @@ button:hover {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/* style for cart-page */
+
+.product-checkout-container {
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px dotted red;
+
+}
+
+.container-product img {
+	width: 15em;
+	height: 15em;
+}
+
+.container-product {
+	display: flex;
+	flex-grow: 2;
+	background-color: rgb(211, 211, 211);
+	border-radius: 0.5em;
+	padding: 1em;
+	margin: 1em;
+}
+
+.product-descript-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.container-total {
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	background-color: rgb(211, 211, 211);
+	border-radius: 0.5em;
+	padding: 0.5em;
+	margin: 1em 0.5em 0.5em 0.5em;
+	align-items: center;
+	height: fit-content;
+}
+
+
+.remove-add {
+	text-decoration: underline;
+	text-align: end;
+	margin: 1em;
+	font-weight: bold;
+}
+
+.remove-add:hover {
+	cursor: pointer;
+}
+
+.remove-add-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+	height: 9em;
+	align-items: end;
+	flex-shrink: 1;
+	border: 1px dotted red;
+}
+
+.product-amount {
+	font-weight: bold;
+	margin: 1em;
+	justify-content: start;
+	width: 2em;
+
+}
+
+.continue-shopping {
+	margin-top: 4em;
+	position: relative;
+	top: 3em;
+	background-color: rgb(211, 211, 211);
+	width:fit-content;
+	padding: 1em;
+	border-radius: 2em;
+	color: black;
+	border: 0.2em solid rgb(211, 211, 211);
+}
+
+.continue-shopping:hover {
+	background-color: white;
+	color:  #0c1427;
+	transition: 0.5s;
+}
+
+.continue-to-pay {
+	margin-top: 1em;
+	background-color: #0c1427;
+	width:fit-content;
+	padding: 1em;
+	border-radius: 2em;
+	color: white;
+	border: 0.2em solid  #0c1427;
+
+}
+
+.continue-to-pay:hover {
+	background-color: white;
+	color:  #0c1427;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.product-name, .product-descript, .product-price {
+	margin: 1em;
+}
+
+.price-container {
+	display: flex;
+	margin-bottom: 1em;
+}
+
+
+.sales-tax, .continue-to-pay {
+	font-size: small;
+	text-align: center;
+}
+
+.price {
+	text-align: end;
+	font-weight: bold;
+	margin-left: 1em;
+	flex-grow: 1;
+}
+
+.estimated-total {
+	text-align: start;
+	font-weight: bold;
+	margin-right: 1em;
+}
+
+.product-price {
+	font-weight: bold;
+}
+/* style for cart-page */
