@@ -87,7 +87,7 @@ button:hover {
   align-items: center;
   gap: 3rem;
 }
-.about img {
+.about img:not(.team-presentation img) {
   width: 90%;
   max-width: 400px;
   border-radius: 50%;
@@ -114,6 +114,22 @@ button:hover {
   padding: 1rem 0;
   max-width: 650px;
   text-align: center;
+}
+
+.team-presentation {
+  position: relative;
+}
+.team-presentation img {
+  border-radius: 1rem;
+  max-width: 100%;
+}
+.team-presentation div {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: var(--font-color);
+  display: flex;
+  align-items: start;
 }
 
 /* Home-page */
