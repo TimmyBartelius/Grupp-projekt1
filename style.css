@@ -227,53 +227,11 @@ button:hover {
   font-weight: bold;
 }
 
-/* Media Query */
-@media (min-width: 500px) {
-  .other-products .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1000px) {
-  .about section:nth-child(2n) {
-    flex-direction: row-reverse;
-  }
-  .about section:not(:first-of-type) {
-    flex-direction: row;
-  }
-  .about section:nth-of-type(2n) {
-    flex-direction: row-reverse;
-  }
-  .about div {
-    align-items: flex-start;
-  }
-  .about div p:nth-of-type(2) {
-    text-align: start;
-  }
-
-  main {
-    padding: 5rem 2rem;
-  }
-
-  .product-info {
-    flex-direction: row;
-    align-items: center;
-  }
-  .product-info-text {
-    max-width: 50%;
-  }
-
-  .other-products .grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
 /* style for cart-page */
 
 .product-checkout-container {
 	display: flex;
-	flex-wrap: wrap;
-	border: 1px dotted red;
+	flex-direction: column;
 
 }
 
@@ -284,8 +242,9 @@ button:hover {
 
 .container-product {
 	display: flex;
-	flex-grow: 2;
-	background-color: rgb(211, 211, 211);
+  flex-direction: column;
+  align-items: center;
+	background-color: white;
 	border-radius: 0.5em;
 	padding: 1em;
 	margin: 1em;
@@ -300,7 +259,7 @@ button:hover {
 	display: flex;
 	flex-grow: 1;
 	flex-direction: column;
-	background-color: rgb(211, 211, 211);
+	background-color: white;
 	border-radius: 0.5em;
 	padding: 0.5em;
 	margin: 1em 0.5em 0.5em 0.5em;
@@ -327,7 +286,6 @@ button:hover {
 	height: 9em;
 	align-items: end;
 	flex-shrink: 1;
-	border: 1px dotted red;
 }
 
 .product-amount {
@@ -406,3 +364,53 @@ button:hover {
 	font-weight: bold;
 }
 /* style for cart-page */
+
+/* Media Query */
+@media (min-width: 500px) {
+  .other-products .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .about section:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+  .about section:not(:first-of-type) {
+    flex-direction: row;
+  }
+  .about section:nth-of-type(2n) {
+    flex-direction: row-reverse;
+  }
+  .about div {
+    align-items: flex-start;
+  }
+  .about div p:nth-of-type(2) {
+    text-align: start;
+  }
+
+  main {
+    padding: 5rem 2rem;
+  }
+
+  .product-info {
+    flex-direction: row;
+    align-items: center;
+  }
+  .product-info-text {
+    max-width: 50%;
+  }
+
+  .other-products .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .product-checkout-container {
+	flex-direction: row;
+  }
+
+  .container-product {
+    flex-direction: row;
+  }
+}
+
