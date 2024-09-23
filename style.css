@@ -151,6 +151,9 @@ button:hover {
 .advertisement div:first-child {
 	grid-column: span 2;
 }
+.advertisement button {
+
+}
 .new-meta-quest {
 	background-image: url("https://about.fb.com/wp-content/uploads/2023/09/Quest-3-Consumer-Highlights_Social-Share.jpg?w=1200");
 	background-size: cover;
@@ -158,6 +161,26 @@ button:hover {
 }
 .new-meta-quest h2 {
 	color: var(--font-color);
+	position: relative;
+	left: 0.4em;
+	top: 0.2em;
+	font-size: 2.7em;
+}
+.new-meta-quest .meta-money {
+	color: var(--font-color);
+	font-size: 2em;
+	position: relative;
+	top: 4em;
+	left: 10em;
+	background-color: var(--secondary-color);
+	width: 6em;
+	border-radius: 0.2em;
+	text-align: center;
+}
+.new-meta-quest .quest-button {
+	position: relative;
+	top: 8em;
+	left: 1em;
 }
 .mega-sale {
 	background-image: url("https://lookaside.fbsbx.com/elementpath/media/?media_id=1425009258200128&version=1723072175&transcode_extension=webp");
@@ -169,7 +192,24 @@ button:hover {
 	position: relative;
 	left: 2.5em;
 	top: 1.5em;
-	font-size: 2.5em;
+	font-size: 2.7em;
+}
+.mega-sale p {
+	height: 5em;
+	width: 5em;
+	background-color: var(--secondary-color);
+	color: var(--font-color);
+	border-radius: 50%;
+	position: relative;
+	bottom: 2.5em;
+	left: 1em;
+	text-align: center;
+	padding: 1em;
+}
+.mega-sale .sale-button {
+	position: relative;
+	top: 4.5em;
+	left: 1em;
 }
 .latest-game {
 	background-image: url("https://images.squarespace-cdn.com/content/v1/61813b3361b99650be1a2c4c/08e6d8a7-b50b-44c1-af8c-1692a40e8d0f/bait_hero_art_2500x865%2B%283%29.jpeg");
@@ -178,8 +218,24 @@ button:hover {
 }
 .latest-game h2 {
 	color: var(--font-color);
+	font-size: 2.7em;
+	position: relative;
+	top: 1.5em;
+	left: 1em;
+}
+.latest-game .money {
+	color: var(--font-color);
 	font-size: 2.5em;
 	position: relative;
 	top: 1.5em;
+	left: 18em;
+	background-color: var(--secondary-color);
+	width: 4.5em;
+	border-radius: 0.2em;
+	text-align: center;
+}
+.latest-game .latest-button {
+	position: relative;
+	top: 7em;
 	left: 1em;
 }
