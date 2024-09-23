@@ -146,16 +146,17 @@ button:hover {
 .advertisement div {
   border: 2px solid var(--primary-color);
   height: 15em;
+  border-radius: 0.5em;
 }
 .advertisement div:first-child {
 	grid-column: span 2;
 }
 .new-meta-quest {
-	background-image: url("https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/09/meta-quest-3-price-release-date-gamerant.jpg");
+	background-image: url("https://about.fb.com/wp-content/uploads/2023/09/Quest-3-Consumer-Highlights_Social-Share.jpg?w=1200");
 	background-size: cover;
 	background-position: center;
 }
-.new-meta-quest p {
+.new-meta-quest h2 {
 	color: var(--font-color);
 }
 .mega-sale {
@@ -163,14 +164,22 @@ button:hover {
 	background-size: cover;
 	background-position: center;
 }
-.mega-sale p {
+.mega-sale h2 {
 	color: var(--primary-color);
+	position: relative;
+	left: 2.5em;
+	top: 1.5em;
+	font-size: 2.5em;
 }
 .latest-game {
 	background-image: url("https://images.squarespace-cdn.com/content/v1/61813b3361b99650be1a2c4c/08e6d8a7-b50b-44c1-af8c-1692a40e8d0f/bait_hero_art_2500x865%2B%283%29.jpeg");
 	background-size: cover;
 	background-position: center;
 }
-.latest-game p {
+.latest-game h2 {
 	color: var(--font-color);
+	font-size: 2.5em;
+	position: relative;
+	top: 1.5em;
+	left: 1em;
 }
