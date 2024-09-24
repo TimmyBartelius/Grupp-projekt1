@@ -1,0 +1,35 @@
+footer{ 
+
+	
+	background-color: rgb(86, 72, 152);
+	margin: auto;
+	color: aliceblue;
+}
+.footer{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	margin-bottom: 50px;
+	padding: 30px;
+}
+p{
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+ul{
+	list-style: none;
+}
+.sveriges-flagg{
+	display: flex;
+	justify-content: right;
+}
+.sveriges-flagg img{ 
+	width: 30px; 
+	margin-right: 50px;
+
+}
+footer .column {
+	display: flex;
+	flex-direction: column;
+	
+}
