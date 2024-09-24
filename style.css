@@ -120,7 +120,8 @@ button:hover {
 
 .advertisement {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  
   gap: 1em;
 }
 .advertisement div {
@@ -367,144 +368,145 @@ button:hover {
 }
 /* style for cart-page */
 
-/* Media Query */
-@media (min-width: 500px) {
-  .other-products .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-@media (min-width: 1000px) {
-  .about section:nth-child(2n) {
-    flex-direction: row-reverse;
-  }
-  .about section:not(:first-of-type) {
-    flex-direction: row;
-  }
-  .about section:nth-of-type(2n) {
-    flex-direction: row-reverse;
-  }
-  .about div {
-    align-items: flex-start;
-  }
-  .about div p:nth-of-type(2) {
-    text-align: start;
-  }
-
-  main {
-    padding: 5rem 2rem;
-  }
-
-  .product-info {
-    flex-direction: row;
-    align-items: center;
-  }
-  .product-info-text {
-    max-width: 50%;
-  }
-
-  .other-products .grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .product-checkout-container {
-	flex-direction: row;
-  }
-
-  .container-product {
-    flex-direction: row;
-  }
-}
-
-
-.advertisement div:first-child {
-	grid-column: span 2;
-}
-.advertisement button {
-
-}
 .new-meta-quest {
-	background-image: url("https://about.fb.com/wp-content/uploads/2023/09/Quest-3-Consumer-Highlights_Social-Share.jpg?w=1200");
+	background-image: url("https://www.m3.se/wp-content/uploads/2023/06/New-Project-2023-06-01T170931.863.jpg?quality=50&strip=all");
 	background-size: cover;
 	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 .new-meta-quest h2 {
 	color: var(--font-color);
-	position: relative;
-	left: 0.4em;
-	top: 0.2em;
 	font-size: 2.7em;
+	margin: 0.2em;
 }
 .new-meta-quest .meta-money {
 	color: var(--font-color);
 	font-size: 2em;
-	position: relative;
-	top: 4em;
-	left: 10em;
-	background-color: var(--secondary-color);
 	width: 6em;
 	border-radius: 0.2em;
 	text-align: center;
 }
 .new-meta-quest .quest-button {
-	position: relative;
-	top: 8em;
-	left: 1em;
+	width: 14em;
 }
 .mega-sale {
-	background-image: url("https://lookaside.fbsbx.com/elementpath/media/?media_id=1425009258200128&version=1723072175&transcode_extension=webp");
+	background-image: url("https://i.redd.it/1fm6wq91onz91.png");
 	background-size: cover;
 	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 .mega-sale h2 {
 	color: var(--primary-color);
-	position: relative;
-	left: 2.5em;
-	top: 1.5em;
 	font-size: 2.7em;
+	margin: 0.4em;
+	background-color: var(--secondary-color);
+	width: 6.5em;
+	border-radius: 0.5em;
+	padding: 0.2em;
+	text-align: center;
+	opacity: 0.6;
 }
 .mega-sale p {
-	height: 5em;
-	width: 5em;
+	height: 6em;
+	width: 6em;
 	background-color: var(--secondary-color);
 	color: var(--font-color);
-	border-radius: 50%;
-	position: relative;
-	bottom: 2.5em;
-	left: 1em;
+	border-radius: 100%;
+	padding: 1.5em;
 	text-align: center;
-	padding: 1em;
+	margin-left: 20em;
+	opacity: 0.9;
 }
 .mega-sale .sale-button {
-	position: relative;
-	top: 4.5em;
-	left: 1em;
+	width: 14em;
+	margin-bottom: 2em;
 }
 .latest-game {
-	background-image: url("https://images.squarespace-cdn.com/content/v1/61813b3361b99650be1a2c4c/08e6d8a7-b50b-44c1-af8c-1692a40e8d0f/bait_hero_art_2500x865%2B%283%29.jpeg");
-	background-size: cover;
-	background-position: center;
+	background-image: url("https://pwimages-a.akamaihd.net/arc/c4/ef/c4efd794fdc320209bf1e6a8525194e61460161974.png");
+	background-size:cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding: 1rem;
+
 }
 .latest-game h2 {
 	color: var(--font-color);
 	font-size: 2.7em;
-	position: relative;
-	top: 1.5em;
-	left: 1em;
+	
 }
 .latest-game .money {
 	color: var(--font-color);
 	font-size: 2.5em;
-	position: relative;
-	top: 1.5em;
-	left: 18em;
-	background-color: var(--secondary-color);
 	width: 4.5em;
 	border-radius: 0.2em;
 	text-align: center;
 }
 .latest-game .latest-button {
-	position: relative;
-	top: 7em;
-	left: 1em;
+	width: 14em;
+	background-color: var(--secondary-colors);
 }
+
+
+/* Media Query */
+@media (min-width: 500px) {
+	.other-products .grid {
+	  grid-template-columns: repeat(2, 1fr);
+	}
+  }
+  
+  @media (min-width: 1000px) {
+	.about section:nth-child(2n) {
+	  flex-direction: row-reverse;
+	}
+	.about section:not(:first-of-type) {
+	  flex-direction: row;
+	}
+	.about section:nth-of-type(2n) {
+	  flex-direction: row-reverse;
+	}
+	.about div {
+	  align-items: flex-start;
+	}
+	.about div p:nth-of-type(2) {
+	  text-align: start;
+	}
+  
+	main {
+	  padding: 5rem 2rem;
+	}
+  
+	.product-info {
+	  flex-direction: row;
+	  align-items: center;
+	}
+	.product-info-text {
+	  max-width: 50%;
+	}
+  
+	.other-products .grid {
+	  grid-template-columns: repeat(4, 1fr);
+	}
+  
+	.product-checkout-container {
+	  flex-direction: row;
+	}
+  
+	.container-product {
+	  flex-direction: row;
+	}
+
+	.advertisement {
+		grid-template-columns: 1fr 1fr;
+	}
+	.advertisement div:first-child {
+		grid-column: span 2;
+	}
+  }
