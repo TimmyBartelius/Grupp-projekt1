@@ -147,11 +147,3 @@ button:hover {
   border: 2px solid var(--primary-color);
   height: 10em;
 }
-
-/* footer  */
-
-footer{
-	background-color: rgb(146, 137, 137);
-	display: flex;
-	width: 100%;
-}
