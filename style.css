@@ -127,9 +127,16 @@ button:hover {
   position: absolute;
   top: 1rem;
   left: 1rem;
-  color: var(--font-color);
+  color: var(--secondary-color);
   display: flex;
   align-items: start;
+  gap: 1rem;
+}
+.team-presentation h1, .team-presentation p {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border: 2px solid var(--secondary-color);
+    margin-right: 1rem;
 }
 
 /* Home-page */
