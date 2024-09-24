@@ -316,9 +316,13 @@ button:hover {
 }
 
 .cart-page button {
-	margin: 2em;
+	margin: 2em 0 2em 2em;
 }
 
+.cart-bottom {
+	display: flex;
+	justify-content: space-between;
+}
 /* style for cart-page */
 
 /* Media Query */
