@@ -475,7 +475,7 @@ footer {
   background-color: var(--secondary-color);
   color: var(--font-color);
   display: flex;
-  padding: 30px;
+  padding: 2rem 1rem 5rem 1rem;
   justify-content: space-around;
   position: relative;
 }
@@ -497,6 +497,7 @@ footer ul {
 }
 
 /* Media Query */
+
 @media (min-width: 500px) {
   .other-products .grid {
     grid-template-columns: repeat(2, 1fr);
