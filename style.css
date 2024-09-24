@@ -233,7 +233,6 @@ button:hover {
 .product-checkout-container {
 	display: flex;
 	flex-direction: column;
-
 }
 
 .container-product img {
@@ -268,18 +267,6 @@ button:hover {
 	height: fit-content;
 }
 
-
-.remove-add {
-	text-decoration: underline;
-	text-align: end;
-	margin: 1em;
-	font-weight: bold;
-}
-
-.remove-add:hover {
-	cursor: pointer;
-}
-
 .remove-add-container {
 	display: flex;
 	flex-direction: row;
@@ -291,46 +278,9 @@ button:hover {
 
 .product-amount {
 	font-weight: bold;
-	margin: 1em;
+	margin: 2em;
 	justify-content: start;
 	width: 2em;
-
-}
-
-.continue-shopping {
-	margin-top: 4em;
-	position: relative;
-	top: 3em;
-	background-color: rgb(211, 211, 211);
-	width:fit-content;
-	padding: 1em;
-	border-radius: 2em;
-	color: black;
-	border: 0.2em solid rgb(211, 211, 211);
-}
-
-.continue-shopping:hover {
-	background-color: white;
-	color:  #0c1427;
-	transition: 0.5s;
-}
-
-.continue-to-pay {
-	margin-top: 1em;
-	background-color: #0c1427;
-	width:fit-content;
-	padding: 1em;
-	border-radius: 2em;
-	color: white;
-	border: 0.2em solid  #0c1427;
-
-}
-
-.continue-to-pay:hover {
-	background-color: white;
-	color:  #0c1427;
-	transition: 0.5s;
-	cursor: pointer;
 }
 
 .product-name, .product-descript, .product-price {
@@ -364,6 +314,11 @@ button:hover {
 .product-price {
 	font-weight: bold;
 }
+
+.cart-page button {
+	margin: 2em;
+}
+
 /* style for cart-page */
 
 /* Media Query */
