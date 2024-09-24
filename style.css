@@ -486,6 +486,11 @@ footer > p {
 }
 footer img {
   object-fit: contain;
+  height: 50px;
+}
+footer section {
+	display: grid;
+	gap: 1rem;
 }
 
 footer p {
