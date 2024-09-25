@@ -91,7 +91,7 @@ button:hover {
   align-items: center;
   gap: 3rem;
 }
-.about img {
+.about img:not(.team-presentation img) {
   width: 90%;
   max-width: 400px;
   border-radius: 50%;
@@ -118,6 +118,29 @@ button:hover {
   padding: 1rem 0;
   max-width: 650px;
   text-align: center;
+}
+
+.team-presentation {
+  position: relative;
+}
+.team-presentation img {
+  border-radius: 1rem;
+  max-width: 100%;
+}
+.team-presentation div {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: var(--secondary-color);
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+}
+.team-presentation h1, .team-presentation p {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border: 2px solid var(--secondary-color);
+    margin-right: 1rem;
 }
 
 /* Home-page */
@@ -450,6 +473,76 @@ footer {
   top: 7em;
   left: 1em;
 }
+
+/*Product page*/
+
+.Meny-Ovan{
+  display: flex;
+  flex-direction: row;
+  border: solid;
+  padding-top: 45px;
+
+  gap: 30px;
+  padding-left: 20%;
+}
+.Meny-Ovan-Bild1, .Meny-Ovan-Bild2, .Meny-Ovan-Bild3{
+  display: flex;
+  width: 100px;
+  height: auto;
+}
+
+
+ 
+
+.Products{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  
+}
+.Produkt1{
+  padding: 10%;
+  border: 3px solid black;
+  margin-bottom: 10%;
+  
+}
+.Produkt2{
+  padding: 10%;
+  border: 3px solid black;
+  margin-bottom: 10%;
+}
+.Produkt3{
+  padding: 10%;
+  border: 3px solid black;
+  margin-bottom: 10%;
+}
+.Lista{
+  margin: 10%;
+}
+.pris1{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.pris2{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.pris3{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.Bild1{
+ width: 100%;
+ height: auto;
+}
+.Bild2{
+  width: 100%;
+  height: auto;
+}
+.Bild3{
+  width: 100%;
+  height: auto;
+}
+
 
 /* Footer */
 
