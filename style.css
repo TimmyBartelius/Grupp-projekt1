@@ -359,7 +359,8 @@ footer {
 
 .cart-bottom {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .ghost-cart {
@@ -617,5 +618,10 @@ footer ul {
 
   .container-product {
     flex-direction: row;
+  }
+
+  .cart-bottom {
+	flex-wrap: nowrap;
+	justify-content: space-between;
   }
 }
