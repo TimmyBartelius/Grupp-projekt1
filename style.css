@@ -540,13 +540,8 @@ footer {
 .Lista {
   margin: 10%;
 }
-.pris1 {
-  margin-top: 10%;
-  margin-bottom: 10%;
-}
-.pris2 {
-  margin-top: 10%;
-  margin-bottom: 10%;
+footer img {
+  object-fit: contain;
 }
 
 .support {
