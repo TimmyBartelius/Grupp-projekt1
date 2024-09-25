@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="./assets/pear.png" />
+
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="menu">
+      <a href="index.html"><img src="./assets/pear.png" alt="logotype" /></a>
+      <ul>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <div>
+        <img src="./assets/search.png" alt="search" />
+        <a href="cart.html"><img src="./assets/shopping-bag.png" alt="shopping cart" /></a>
+      </div>
+    </nav>
+
+    <main class="cart-page">
+      <h1 class="header">Your Shopping Cart</h1>
+      <section class="product-checkout-container">
+        <div class="container-product">
+          <a href="oneProduct.html"
+            ><img
+              src="https://static0.xdaimages.com/wordpress/wp-content/uploads/2023/09/untitled_design-removebg-preview-2.png"
+          /></a>
+          <div class="product-descript-column">
+            <p class="product-name">Meta Quest 3</p>
+            <p class="product-descript">Mixed reality (inclusive of virtual reality)</p>
+            <p class="product-price">SEK 6,990</p>
+            <div class="remove-add-container">
+              <p class="product-amount">x 1</p>
+              <button class="ghost-cart">Add</button>
+              <button class="ghost-cart">Remove</button>
+            </div>
+          </div>
+        </div>
+        <div class="container-total">
+          <div class="price-container">
+            <p class="estimated-total">Estimated total</p>
+            <p class="price">SEK 6,990</p>
+          </div>
+          <p class="sales-tax">Sales tax will be calculated during checkout where applicable</p>
+          <button>Continue to payment</button>
+        </div>
+      </section>
+      <section class="cart-bottom">
+        <button class="ghost-cart continue-shopping" onclick="window.location.href='./product.html'">
+          Continue Shopping
+        </button>
+        <button class="ghost-cart">Remove all items</button>
+      </section>
+    </main>
+  </body>
+</html>
