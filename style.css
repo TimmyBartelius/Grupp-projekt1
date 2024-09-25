@@ -424,7 +424,8 @@ button:hover {
 	width: 6em;
 	border-radius: 0.2em;
 	align-self: flex-end;
-	margin-right: 1.5em;
+	margin-right: 1.3em;
+	margin-top: 2em;
 }
 
 .mega-sale {
