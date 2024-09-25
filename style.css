@@ -486,7 +486,7 @@ footer > p {
 }
 footer img {
   object-fit: contain;
-  height: 50px;
+  height: 45px;
 }
 footer section {
 	display: grid;
