@@ -379,6 +379,11 @@ button:hover {
 	background-size: cover;
 	background-position: center;
 	border-radius: 0.5em;
+	: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .front-vr h2 {
 	color: var(--font-color);
@@ -386,6 +391,19 @@ button:hover {
 	margin: 0.2em;
 	padding: 6em;
 }
+
+/* advertisement*/
+
+.advertisement a {
+	border: 1px solid var(--secondary-color);
+	background-color: aliceblue;
+	width: 7em;
+	border-radius: 0.3em;
+	padding: 0.2em;
+	text-align: center;
+	text-decoration: none;
+	margin: 0.3em;
+} 
 .new-meta-quest {
 	background-image: url("https://www.m3.se/wp-content/uploads/2023/06/New-Project-2023-06-01T170931.863.jpg?quality=50&strip=all");
 	background-size: cover;
@@ -405,18 +423,17 @@ button:hover {
 	font-size: 2em;
 	width: 6em;
 	border-radius: 0.2em;
-	text-align: center;
+	align-self: flex-end;
+	margin-right: 1.5em;
 }
-.new-meta-quest .quest-button {
-	width: 14em;
-}
+
 .mega-sale {
 	background-image: url("https://i.redd.it/1fm6wq91onz91.png");
 	background-size: cover;
 	background-position: center;
 	display: flex;
+	box-sizing: border-box;
 	flex-direction: column;
-	justify-content: space-between;
 }
 .mega-sale h2 {
 	color: var(--primary-color);
@@ -437,22 +454,22 @@ button:hover {
 	border-radius: 100%;
 	padding: 1.5em;
 	text-align: center;
-	margin-left: 20em;
 	opacity: 0.9;
+	align-self: end;
+	margin-right: 6.5em;
 }
-.mega-sale .sale-button {
-	width: 14em;
-	margin-bottom: 2em;
-}
+
 .latest-game {
 	background-image: url("https://pwimages-a.akamaihd.net/arc/c4/ef/c4efd794fdc320209bf1e6a8525194e61460161974.png");
 	background-size:cover;
 	background-position: top;
 	background-repeat: no-repeat;
 	display: flex;
+	box-sizing: border-box;
 	align-items: flex-end;
 	justify-content: space-between;
 	padding: 1rem;
+	margin-top: 1.5em;
 
 }
 .latest-game h2 {
@@ -460,17 +477,7 @@ button:hover {
 	font-size: 2.7em;
 	
 }
-.latest-game .money {
-	color: var(--font-color);
-	font-size: 2.5em;
-	width: 4.5em;
-	border-radius: 0.2em;
-	text-align: center;
-}
-.latest-game .latest-button {
-	width: 14em;
-	background-color: var(--secondary-colors);
-}
+
 
 /* Support */
 
@@ -478,13 +485,24 @@ button:hover {
 	box-sizing: border-box;
 	display: flex;
 }
+.support-container p {
+	text-align: center;
+	padding: 1.5em;
+	font-size: 2.5em;
+	border-radius: 0.2em;
+	margin-top: 0.5em;
+	background-color: var(--primary-color);
+}
+
 .support {
-	border: 1px solid green;
+	border: 1px solid var(--secondary-color);
 	flex-grow: 2;
+
 }
 .app-support {
-	border: 1px solid green;
+	border: 1px solid var(--secondary-color);
 	flex-grow: 1;
+	margin-left: 0.2em;
 }
 
 
