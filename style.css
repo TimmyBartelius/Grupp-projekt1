@@ -15,7 +15,11 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   font-size: 1rem;
-  font-size: clamp(0.8rem, 0.8571428571428572rem + 0.7142857142857143vw, 1.25rem);
+  font-size: clamp(
+    0.8rem,
+    0.8571428571428572rem + 0.7142857142857143vw,
+    1.25rem
+  );
   box-shadow: -10px 0 20px rgba(0, 0, 0, 0.2), 10px 0 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -87,7 +91,7 @@ button:hover {
   align-items: center;
   gap: 3rem;
 }
-.about img {
+.about img:not(.team-presentation img) {
   width: 90%;
   max-width: 400px;
   border-radius: 50%;
@@ -116,6 +120,29 @@ button:hover {
   text-align: center;
 }
 
+.team-presentation {
+  position: relative;
+}
+.team-presentation img {
+  border-radius: 1rem;
+  max-width: 100%;
+}
+.team-presentation div {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: var(--secondary-color);
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+}
+.team-presentation h1, .team-presentation p {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border: 2px solid var(--secondary-color);
+    margin-right: 1rem;
+}
+
 /* Home-page */
 
 .advertisement {
@@ -128,6 +155,14 @@ button:hover {
   border: 2px solid var(--primary-color);
   height: 15em;
   border-radius: 0.5em;
+}
+
+/* footer  */
+
+footer {
+  background-color: rgb(146, 137, 137);
+  display: flex;
+  width: 100%;
 }
 
 /* OneProduct */
@@ -235,136 +270,88 @@ button:hover {
 .product-checkout-container {
 	display: flex;
 	flex-direction: column;
-
 }
 
 .container-product img {
-	width: 15em;
-	height: 15em;
+  width: 15em;
+  height: 15em;
 }
 
 .container-product {
-	display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-	background-color: white;
-	border-radius: 0.5em;
-	padding: 1em;
-	margin: 1em;
+  background-color: white;
+  border-radius: 0.5em;
+  padding: 1em;
+  margin: 1em;
 }
 
 .product-descript-column {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .container-total {
-	display: flex;
-	flex-grow: 1;
-	flex-direction: column;
-	background-color: white;
-	border-radius: 0.5em;
-	padding: 0.5em;
-	margin: 1em 0.5em 0.5em 0.5em;
-	align-items: center;
-	height: fit-content;
-}
-
-
-.remove-add {
-	text-decoration: underline;
-	text-align: end;
-	margin: 1em;
-	font-weight: bold;
-}
-
-.remove-add:hover {
-	cursor: pointer;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  margin: 1em 0.5em 0.5em 0.5em;
+  align-items: center;
+  height: fit-content;
 }
 
 .remove-add-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: end;
-	height: 9em;
-	align-items: end;
-	flex-shrink: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  height: 9em;
+  align-items: end;
+  flex-shrink: 1;
 }
 
 .product-amount {
 	font-weight: bold;
-	margin: 1em;
+	margin: 2em;
 	justify-content: start;
 	width: 2em;
-
 }
 
-.continue-shopping {
-	margin-top: 4em;
-	position: relative;
-	top: 3em;
-	background-color: rgb(211, 211, 211);
-	width:fit-content;
-	padding: 1em;
-	border-radius: 2em;
-	color: black;
-	border: 0.2em solid rgb(211, 211, 211);
-}
-
-.continue-shopping:hover {
-	background-color: white;
-	color:  #0c1427;
-	transition: 0.5s;
-}
-
-.continue-to-pay {
-	margin-top: 1em;
-	background-color: #0c1427;
-	width:fit-content;
-	padding: 1em;
-	border-radius: 2em;
-	color: white;
-	border: 0.2em solid  #0c1427;
-
-}
-
-.continue-to-pay:hover {
-	background-color: white;
-	color:  #0c1427;
-	transition: 0.5s;
-	cursor: pointer;
-}
-
-.product-name, .product-descript, .product-price {
-	margin: 1em;
+.product-name,
+.product-descript,
+.product-price {
+  margin: 1em;
 }
 
 .price-container {
-	display: flex;
-	margin-bottom: 1em;
+  display: flex;
+  margin-bottom: 1em;
 }
 
-
-.sales-tax, .continue-to-pay {
-	font-size: small;
-	text-align: center;
+.sales-tax,
+.continue-to-pay {
+  font-size: small;
+  text-align: center;
 }
 
 .price {
-	text-align: end;
-	font-weight: bold;
-	margin-left: 1em;
-	flex-grow: 1;
+  text-align: end;
+  font-weight: bold;
+  margin-left: 1em;
+  flex-grow: 1;
 }
 
 .estimated-total {
-	text-align: start;
-	font-weight: bold;
-	margin-right: 1em;
+  text-align: start;
+  font-weight: bold;
+  margin-right: 1em;
 }
 
 .product-price {
-	font-weight: bold;
+  font-weight: bold;
 }
 /* style for cart-page */
 
