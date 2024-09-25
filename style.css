@@ -368,7 +368,24 @@ button:hover {
 }
 /* style for cart-page */
 
+.front-vr {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
 
+.front-img {
+	background-image: url("https://i0.wp.com/4experience.co/wp-content/uploads/2022/07/cover-vr-games-augmented-reality-players-are-ready-high-quality-photo-1.jpg?resize=1080%2C675&ssl=1");
+	background-size: cover;
+	background-position: center;
+	border-radius: 0.5em;
+}
+.front-vr h2 {
+	color: var(--font-color);
+	font-size: 2.7em;
+	margin: 0.2em;
+	padding: 6em;
+}
 .new-meta-quest {
 	background-image: url("https://www.m3.se/wp-content/uploads/2023/06/New-Project-2023-06-01T170931.863.jpg?quality=50&strip=all");
 	background-size: cover;
@@ -376,6 +393,7 @@ button:hover {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	border-radius: 0.2em;
 }
 .new-meta-quest h2 {
 	color: var(--font-color);
@@ -452,6 +470,21 @@ button:hover {
 .latest-game .latest-button {
 	width: 14em;
 	background-color: var(--secondary-colors);
+}
+
+/* Support */
+
+.support-container {
+	box-sizing: border-box;
+	display: flex;
+}
+.support {
+	border: 1px solid green;
+	flex-grow: 2;
+}
+.app-support {
+	border: 1px solid green;
+	flex-grow: 1;
 }
 
 
