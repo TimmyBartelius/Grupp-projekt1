@@ -372,68 +372,51 @@ button:hover {
 
 /*Product page*/
 
-.meny-ovan {
+.meny-slide {
   display: flex;
   flex-direction: row;
-  border: solid;
+  border: solid 2px var(--secondary-color);
   padding-top: 45px;
-
-  gap: 30px;
-  padding-left: 20%;
+  overflow: auto;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem 0;
 }
-.meny-ovan-bild1,
-.meny-ovan-bild2,
-.meny-ovan-bild3 {
+.meny-slide div {
+  padding: 5px;
+}
+.meny-slide img {
   display: flex;
   width: 100px;
   height: auto;
 }
-
 .products {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
-.produkt1 {
-  padding: 10%;
-  border: 3px solid black;
-  margin-bottom: 10%;
+.products div {
+  padding: 2rem;
+  border: 2px solid var(--secondary-color);
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
 }
-.produkt2 {
-  padding: 10%;
-  border: 3px solid black;
-  margin-bottom: 10%;
-}
-.produkt3 {
-  padding: 10%;
-  border: 3px solid black;
-  margin-bottom: 10%;
-}
-.Lista {
-  margin: 10%;
-}
-.pris1 {
-  margin-top: 10%;
-  margin-bottom: 10%;
-}
-.pris2 {
-  margin-top: 10%;
-  margin-bottom: 10%;
-}
-.pris3 {
-  margin-top: 10%;
-  margin-bottom: 10%;
-}
-.bild1 {
+
+.bild {
   width: 100%;
   height: auto;
 }
-.bild2 {
-  width: 100%;
-  height: auto;
+.questionmark {
+  max-height: 60px;
+  max-width: 60px;
 }
-.bild3 {
-  width: 100%;
-  height: auto;
+.QA {
+  padding-left: 12px;
+}
+.other-text {
+  padding-top: 6px;
+  padding-left: 22px;
 }
 
 /* advertisement*/
@@ -668,5 +651,17 @@ footer ul {
   }
   .advertisement div:first-child {
     grid-column: span 2;
+  }
+}
+
+}
+@media (min-width: 640px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .products {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
