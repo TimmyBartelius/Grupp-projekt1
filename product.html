@@ -1,97 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-	
-	<link rel="icon" href="./assets/pear.png" />
-	
-	<title>Product</title>
-	
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<nav class="menu">
-		<a href="index.html"><img src="./assets/pear.png" alt="logotype"></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
 
-		<ul>
-			<li><a href="product.html">Product</a></li>
-			<li><a href="about.html">About</a></li>
-		</ul>
+    <link rel="icon" href="./assets/pear.png" />
 
-		<div>
-			<img src="./assets/search.png" alt="search">
-			<a href="cart.html"><img src="./assets/shopping-bag.png" alt="shopping cart" /></a>
-		</div>
-	</nav>
+    <title>Product</title>
 
-	<main class="Products">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="menu">
+      <a href="index.html"><img src="./assets/pear.png" alt="logotype" /></a>
 
-	<nav class="meny-ovan">
+      <ul>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
 
-		<div class="meny-ovan1">
-			<img class="meny-ovan-bild1" src="assets/Meta-Quest-2-Transparent.png" alt="VR HEADSET">
-			<p>META QUEST</p>
-		</div>
+      <div>
+        <img src="./assets/search.png" alt="search" />
+        <a href="cart.html"
+          ><img src="./assets/shopping-bag.png" alt="shopping cart"
+        /></a>
+      </div>
+    </nav>
 
-		<div class="meny-ovan2">
-				<img class="meny-ovan-bild2" src="assets/meta-quest-pro.png" alt="VR HEADSET">
-				<p>META QUEST PRO</p>
-		</div>
+    <main class="product-page">
+      <nav class="meny-slide">
+        <div>
+          <img src="assets/primax-menu-img.jpg" alt="VR HEADSETS" />
+          <p>VR Headsets</p>
+        </div>
 
-		<div class="meny-ovan3">
-				<img class="meny-ovan-bild3" src="assets/meta-quest-3-1.png" alt="VR HEADSET">
-				<p>META QUEST 3</p>
-		</div>
+        <div>
+          <img src="assets/hörlurar.png" alt="Headphones" />
+          <p>Headphones</p>
+        </div>
 
-	</nav>
-		
-<div class="produkt1">
+        <div>
+          <img src="assets/handkontroller.png" alt="Other" />
+          <p class="other-text">Other</p>
+        </div>
 
-	<img class="bild1" src="assets/Meta-Quest-2-Transparent.png" alt="produkt1">
-	<h2 class="MetaQuest">Meta Quest</h2>
-	<p class="pris1"> <b>Starting at SEK 6,990</b></p>
-	<button class="Product-button">Learn more</button>
-	<ul class="Lista"></ul>
-		<li> Mixed-reality experiences, inclusive of immersive VR</li>
-		<li>Highest resolution infinity display 25PPD</li>
-		<li>Snapdragon&reg; XR2 Gen2</li>
-		<li>More customizable and adjustable fit</li>
-	</ul>
-</div>
+        <div>
+          <img
+            class="questionmark"
+            src="assets/Black_question_mark.png"
+            alt="Q&A"
+          />
+          <p class="QA">Q/A</p>
+        </div>
+      </nav>
 
-<div class="produkt2">
+      <section class="products">
+        <div>
+          <img class="bild" src="assets/meta-menu-img.png" alt="produkt1" />
+          <h2 class="MetaQuest">Meta Quest</h2>
+          <p class="pris"><b>Starting at SEK 6,990</b></p>
+          <button class="Product-button">Learn more</button>
 
-	<img class="bild2" src="assets/meta-quest-pro.png" alt="Produkt2">
-	<h2 class="Meta-Quest-Pro"> Meta Quest Pro</h2>
-	<p class="pris2"> <b>Starting at SEK 13,829.99</b></p>
-	<button class="Product-button">Learn more</button>
-	<ul class="Lista">
-		<li> Mixed-reality experiences, inclusive of immersive VR</li>
-		<li>Highest resolution infinity display 25PPD</li>
-		<li>Snapdragon&reg; XR2 Gen2</li>
-		<li>More customizable and adjustable fit</li>
-	</ul>
-</div>
+          <ul class="lista">
+            <li>Mixed-reality experiences, inclusive of immersive VR</li>
+            <li>Highest resolution infinity display 25PPD</li>
+            <li>Snapdragon&reg; XR2 Gen2</li>
+            <li>More customizable and adjustable fit</li>
+          </ul>
+        </div>
 
-<div class="produkt3">
+        <div>
+          <img class="bild" src="assets/metaquestpro.png" alt="Produkt2" />
+          <h2 class="Meta-Quest-Pro">Meta Quest Pro</h2>
+          <p class="pris"><b>Starting at SEK 13,829.99</b></p>
+          <button class="Product-button">Learn more</button>
 
-	<img class="bild3" src="assets/meta-quest-3-1.png" alt="Produkt3">
-	<h2 class="Meta-Quest-3"> Meta Quest 3</h2>
-	<p class="pris3"> <b>Starting at SEK 6,990</b></p>
-	<button class="Product-button">Learn more</button>
-	<ul class="Lista"></ul>
-		<li> Mixed-reality experiences, inclusive of immersive VR</li>
-		<li>Highest resolution infinity display 25PPD</li>
-		<li>Snapdragon&reg; XR2 Gen2</li>
-		<li>More customizable and adjustable fit</li>
-	</ul>
-</div>
+          <ul class="lista">
+            <li>Mixed-reality experiences, inclusive of immersive VR</li>
+            <li>Highest resolution infinity display 25PPD</li>
+            <li>Snapdragon&reg; XR2 Gen2</li>
+            <li>More customizable and adjustable fit</li>
+          </ul>
+        </div>
 
+        <div>
+          <img class="bild" src="assets/meta-quest-3-1.png" alt="Produkt3" />
+          <h2 class="Meta-Quest-3">Meta Quest 3</h2>
+          <p class="pris"><b>Starting at SEK 6,990</b></p>
+          <button class="Product-button">Learn more</button>
 
-	</main>
-</body>
+          <ul class="lista">
+            <li>Mixed-reality experiences, inclusive of immersive VR</li>
+            <li>Highest resolution infinity display 25PPD</li>
+            <li>Snapdragon&reg; XR2 Gen2</li>
+            <li>More customizable and adjustable fit</li>
+          </ul>
+        </div>
+
+        <div>
+          <img class="bild" src="assets/hörlurar.png" alt="produkt4" />
+          <h2 class="hörlurar1">Headphones for VR</h2>
+          <p class="pris"><b>Starting at SEK 4,300</b></p>
+          <button class="Product-button">Learn more</button>
+
+          <ul class="lista">
+            <li>The best headphones for immersive gaming</li>
+            <li>THX certified, mulitple ports</li>
+            <li>Light-weight, engineered for immersion</li>
+            <li>Made in Sweden</li>
+          </ul>
+        </div>
+
+        <div>
+          <img class="bild" src="assets/handkontroller.png" alt="produkt5" />
+          <h2 class="handkontroller">Controllers for VR</h2>
+          <p class="pris"><b>Starting at SEK 899</b></p>
+          <button class="Product-button">Learn more</button>
+
+          <ul class="lista">
+            <li>The second most needed equipment for VR</li>
+            <li>Ergonimically made, with green in mind</li>
+            <li>Light-weight, engineered for immersion</li>
+            <li>Made in Sweden</li>
+          </ul>
+        </div>
+
+        <div>
+          <img class="bild" src="assets/Batterier.png" alt="produkt6" />
+          <h2 class="batteries">Batteries</h2>
+          <p class="pris"><b>Starting at SEK 100</b></p>
+          <button class="Product-button">Learn more</button>
+
+          <ul class="lista">
+            <li>For all your gaming needs</li>
+            <li>Long-lasting</li>
+            <li>Rechargeable</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
