@@ -22,7 +22,6 @@ body {
 main {
   padding: 5rem 0.5rem;
   background-color: var(--primary-color);
-  min-height: 100vh;
 }
 
 li {
