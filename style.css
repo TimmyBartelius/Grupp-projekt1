@@ -477,7 +477,7 @@ footer {
   display: flex;
   padding: 2rem 1rem 5rem 1rem;
   justify-content: space-around;
-  position: relative;
+   flex-direction: column;
 }
 footer > p {
   position: absolute;
@@ -488,8 +488,9 @@ footer img {
   object-fit: contain;
   height: 45px;
 }
-footer section {
+footer .column {
 	display: grid;
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr;
 	gap: 1rem;
 }
 
@@ -499,6 +500,14 @@ footer p {
 }
 footer ul {
   list-style: none;
+}
+.socialmedia{
+	margin-top: 100px;
+}
+.sweden{display: flex;
+	justify-content: end;
+	margin-right: 30px;
+
 }
 
 /* Media Query */
