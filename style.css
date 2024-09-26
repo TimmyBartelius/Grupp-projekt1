@@ -15,11 +15,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   font-size: 1rem;
-  font-size: clamp(
-    0.8rem,
-    0.8571428571428572rem + 0.7142857142857143vw,
-    1.25rem
-  );
+  font-size: clamp(0.8rem, 0.8571428571428572rem + 0.7142857142857143vw, 1.25rem);
   box-shadow: -10px 0 20px rgba(0, 0, 0, 0.2), 10px 0 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -91,7 +87,7 @@ button:hover {
   align-items: center;
   gap: 3rem;
 }
-.about img {
+.about img:not(.team-presentation img) {
   width: 90%;
   max-width: 400px;
   border-radius: 50%;
@@ -120,25 +116,42 @@ button:hover {
   text-align: center;
 }
 
+.team-presentation {
+  position: relative;
+}
+.team-presentation img {
+  border-radius: 1rem;
+  max-width: 100%;
+}
+.team-presentation div {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: var(--secondary-color);
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+}
+.team-presentation h1,
+.team-presentation p {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  border: 2px solid var(--secondary-color);
+  margin-right: 1rem;
+}
+
 /* Home-page */
 
 .advertisement {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+
   gap: 1em;
 }
 .advertisement div {
   border: 2px solid var(--primary-color);
   height: 15em;
   border-radius: 0.5em;
-}
-
-/* footer  */
-
-footer {
-  background-color: rgb(146, 137, 137);
-  display: flex;
-  width: 100%;
 }
 
 /* OneProduct */
@@ -280,17 +293,6 @@ footer {
   height: fit-content;
 }
 
-.remove-add {
-  text-decoration: underline;
-  text-align: end;
-  margin: 1em;
-  font-weight: bold;
-}
-
-.remove-add:hover {
-  cursor: pointer;
-}
-
 .remove-add-container {
   display: flex;
   flex-direction: row;
@@ -302,44 +304,9 @@ footer {
 
 .product-amount {
   font-weight: bold;
-  margin: 1em;
+  margin: 2em;
   justify-content: start;
   width: 2em;
-}
-
-.continue-shopping {
-  margin-top: 4em;
-  position: relative;
-  top: 3em;
-  background-color: rgb(211, 211, 211);
-  width: fit-content;
-  padding: 1em;
-  border-radius: 2em;
-  color: black;
-  border: 0.2em solid rgb(211, 211, 211);
-}
-
-.continue-shopping:hover {
-  background-color: white;
-  color: #0c1427;
-  transition: 0.5s;
-}
-
-.continue-to-pay {
-  margin-top: 1em;
-  background-color: #0c1427;
-  width: fit-content;
-  padding: 1em;
-  border-radius: 2em;
-  color: white;
-  border: 0.2em solid #0c1427;
-}
-
-.continue-to-pay:hover {
-  background-color: white;
-  color: #0c1427;
-  transition: 0.5s;
-  cursor: pointer;
 }
 
 .product-name,
@@ -376,97 +343,230 @@ footer {
   font-weight: bold;
 }
 
-/* Home */
+.cart-page button {
+  margin: 2em 0 2em 2em;
+}
 
-.advertisement div:first-child {
-  grid-column: span 2;
+.cart-bottom {
+  display: flex;
+  justify-content: space-between;
+  /* style for cart-page */
 }
-.advertisement button {
+
+.ghost-cart {
+  background-color: transparent;
+  color: var(--secondary-color);
 }
-.new-meta-quest {
-  background-image: url("https://about.fb.com/wp-content/uploads/2023/09/Quest-3-Consumer-Highlights_Social-Share.jpg?w=1200");
+
+.ghost-cart:hover {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  color: var(--font-color);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.continue-shopping {
+  background-color: white;
+}
+
+/*Product page*/
+
+.meny-ovan {
+  display: flex;
+  flex-direction: row;
+  border: solid;
+  padding-top: 45px;
+
+  gap: 30px;
+  padding-left: 20%;
+}
+.meny-ovan-bild1,
+.meny-ovan-bild2,
+.meny-ovan-bild3 {
+  display: flex;
+  width: 100px;
+  height: auto;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.produkt1 {
+  padding: 10%;
+  border: 3px solid black;
+  margin-bottom: 10%;
+}
+.produkt2 {
+  padding: 10%;
+  border: 3px solid black;
+  margin-bottom: 10%;
+}
+.produkt3 {
+  padding: 10%;
+  border: 3px solid black;
+  margin-bottom: 10%;
+}
+.Lista {
+  margin: 10%;
+}
+.pris1 {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.pris2 {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.pris3 {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.bild1 {
+  width: 100%;
+  height: auto;
+}
+.bild2 {
+  width: 100%;
+  height: auto;
+}
+.bild3 {
+  width: 100%;
+  height: auto;
+}
+
+/* advertisement*/
+
+.front-vr h2 {
+  color: var(--font-color);
+  font-size: 2.7em;
+  margin: 0.2em;
+  padding: 6em;
+}
+
+.front-vr {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.front-img {
+  background-image: url("https://i0.wp.com/4experience.co/wp-content/uploads/2022/07/cover-vr-games-augmented-reality-players-are-ready-high-quality-photo-1.jpg?resize=1080%2C675&ssl=1");
   background-size: cover;
   background-position: center;
+  border-radius: 0.5em;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advertisement a {
+  border: 1px solid var(--secondary-color);
+  background-color: aliceblue;
+  width: 7em;
+  border-radius: 0.3em;
+  padding: 0.2em;
+  text-align: center;
+  text-decoration: none;
+  margin: 0.3em;
+}
+.new-meta-quest {
+  background-image: url("https://www.m3.se/wp-content/uploads/2023/06/New-Project-2023-06-01T170931.863.jpg?quality=50&strip=all");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.2em;
 }
 .new-meta-quest h2 {
   color: var(--font-color);
-  position: relative;
-  left: 0.4em;
-  top: 0.2em;
   font-size: 2.7em;
+  margin: 0.2em;
 }
 .new-meta-quest .meta-money {
   color: var(--font-color);
   font-size: 2em;
-  position: relative;
-  top: 4em;
-  left: 10em;
-  background-color: var(--secondary-color);
   width: 6em;
   border-radius: 0.2em;
-  text-align: center;
-}
-.new-meta-quest .quest-button {
-  position: relative;
-  top: 8em;
-  left: 1em;
+  align-self: flex-end;
+  margin-right: 1.3em;
+  margin-top: 2em;
 }
 .mega-sale {
-  background-image: url("https://lookaside.fbsbx.com/elementpath/media/?media_id=1425009258200128&version=1723072175&transcode_extension=webp");
+  background-image: url("https://i.redd.it/1fm6wq91onz91.png");
   background-size: cover;
   background-position: center;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
 }
 .mega-sale h2 {
   color: var(--primary-color);
-  position: relative;
-  left: 2.5em;
-  top: 1.5em;
   font-size: 2.7em;
+  margin: 0.4em;
+  background-color: var(--secondary-color);
+  width: 6.5em;
+  border-radius: 0.5em;
+  padding: 0.2em;
+  text-align: center;
+  opacity: 0.6;
 }
 .mega-sale p {
-  height: 5em;
-  width: 5em;
+  height: 6em;
+  width: 6em;
   background-color: var(--secondary-color);
   color: var(--font-color);
-  border-radius: 50%;
-  position: relative;
-  bottom: 2.5em;
-  left: 1em;
+  border-radius: 100%;
+  padding: 1.5em;
   text-align: center;
-  padding: 1em;
+  opacity: 0.9;
+  align-self: end;
+  margin-right: 6.5em;
 }
-.mega-sale .sale-button {
-  position: relative;
-  top: 4.5em;
-  left: 1em;
-}
+
 .latest-game {
-  background-image: url("https://images.squarespace-cdn.com/content/v1/61813b3361b99650be1a2c4c/08e6d8a7-b50b-44c1-af8c-1692a40e8d0f/bait_hero_art_2500x865%2B%283%29.jpeg");
+  background-image: url("https://pwimages-a.akamaihd.net/arc/c4/ef/c4efd794fdc320209bf1e6a8525194e61460161974.png");
   background-size: cover;
-  background-position: center;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  box-sizing: border-box;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-top: 1.5em;
 }
 .latest-game h2 {
   color: var(--font-color);
   font-size: 2.7em;
-  position: relative;
-  top: 1.5em;
-  left: 1em;
 }
-.latest-game .money {
-  color: var(--font-color);
-  font-size: 2.5em;
-  position: relative;
-  top: 1.5em;
-  left: 18em;
-  background-color: var(--secondary-color);
-  width: 4.5em;
-  border-radius: 0.2em;
+
+/* Support */
+
+.support-container {
+  box-sizing: border-box;
+  display: flex;
+}
+.support-container p {
   text-align: center;
+  padding: 1.5em;
+  font-size: 2.5em;
+  border-radius: 0.2em;
+  margin-top: 0.5em;
+  background-color: var(--primary-color);
 }
-.latest-game .latest-button {
-  position: relative;
-  top: 7em;
-  left: 1em;
+
+.support {
+  border: 1px solid var(--secondary-color);
+  flex-grow: 2;
+}
+.app-support {
+  border: 1px solid var(--secondary-color);
+  flex-grow: 1;
+  margin-left: 0.2em;
 }
 
 /* Footer */
@@ -492,6 +592,10 @@ footer .column {
 	display: grid;
 	grid-template-columns:1fr 1fr 1fr 1fr 1fr;
 	gap: 1rem;
+}
+footer section {
+  display: grid;
+  gap: 1rem;
 }
 
 footer p {
@@ -557,5 +661,12 @@ footer ul {
 
   .container-product {
     flex-direction: row;
+  }
+
+  .advertisement {
+    grid-template-columns: 1fr 1fr;
+  }
+  .advertisement div:first-child {
+    grid-column: span 2;
   }
 }
