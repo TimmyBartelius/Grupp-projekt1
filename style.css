@@ -99,9 +99,9 @@ button:hover {
   flex-direction: column;
 }
 .about div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
 }
 .about div p:first-of-type {
   font-size: 1rem;
@@ -112,7 +112,6 @@ button:hover {
 .about div p:nth-of-type(2) {
   padding: 1rem 0;
   max-width: 650px;
-  text-align: center;
 }
 
 .team-presentation {
