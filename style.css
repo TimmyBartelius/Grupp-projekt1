@@ -26,7 +26,6 @@ body {
 main {
   padding: 5rem 0.5rem;
   background-color: var(--primary-color);
-  min-height: 100vh;
 }
 
 li {
@@ -80,7 +79,7 @@ button:hover {
   letter-spacing: 2px;
 }
 .menu img {
-  height: 1.5rem;
+  height: 2rem;
 }
 
 /* About */
