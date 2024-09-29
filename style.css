@@ -145,17 +145,6 @@ button:hover {
 
 /* Home-page */
 
-.advertisement {
-  display: grid;
-  grid-template-columns: 1fr;
-  
-  gap: 1em;
-}
-.advertisement > div {
-  border: 2px solid var(--primary-color);
-  height: 15em;
-  border-radius: 0.5em;
-}
 
 /* footer  */
 
@@ -355,10 +344,11 @@ footer {
 }
 /* style for cart-page */
 
+
+/* front image VR */
 .front-vr {
 	box-sizing: border-box;
 	display: flex;
-	flex-direction: column;
 }
 
 .front-img {
@@ -381,6 +371,18 @@ footer {
 
 /* advertisement*/
 
+.advertisement {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1em;
+  }
+  .advertisement > div {
+	border: 2px solid var(--primary-color);
+	height: 15em;
+	border-radius: 0.3em;
+  }
+  
+
 .advertisement a {
 	border: 1px solid var(--secondary-color);
 	background-color: aliceblue;
@@ -390,7 +392,12 @@ footer {
 	text-align: center;
 	text-decoration: none;
 	margin: 0.3em;
+	
 } 
+.advertisement a:hover {
+	background-color: lightgrey;
+}
+
 .new-meta-quest {
 	background-image: url("https://www.m3.se/wp-content/uploads/2023/06/New-Project-2023-06-01T170931.863.jpg?quality=50&strip=all");
 	background-size: cover;
@@ -399,7 +406,7 @@ footer {
 	box-sizing: border-box;
 	flex-direction: column;
 	justify-content: space-between;
-	border-radius: 0.2em;
+	border-radius: 0.3em;
 }
 .new-meta-quest div {
 	display: flex;
@@ -488,41 +495,15 @@ footer {
 }
 
 
-.custumer-container img.icon-1 {
+.custumer-container img.icon-1, .custumer-container img.icon-2, .custumer-container img.icon-3 {
 	width: 60px;
 	height: 60px;
 	
 }
 
-.custumer-container img.icon-2 {
-	width: 60px;
-	height: 60px;
-	
-}
-.custumer-container img.icon-3 {
-	width: 60px;
-	height: 60px;
-}
 
-.custumer-1 {
+.custumer-1, .custumer-2, .custumer-3 {
 	display: flex;
-	padding: 1em;
-	gap: 1em;
-	text-align: center;	
-	
-
-}
-.custumer-2 {
-	display: flex;
-	text-align: center;
-	padding: 1em;
-	gap: 1em;
-	width: 100%;
-	
-}
-.custumer-3 {
-	display: flex;
-	text-align: center;
 	padding: 1em;
 	gap: 1em;
 	width: 100%;
