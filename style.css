@@ -24,7 +24,7 @@ body {
 }
 
 main {
-  padding: 5rem 0.5rem;
+  padding: 1rem;
   background-color: var(--primary-color);
 }
 
@@ -59,12 +59,7 @@ button:hover {
   justify-content: space-around;
   align-items: center;
   padding: 0.5rem;
-  width: 1440px;
-  max-width: 100%;
-  position: fixed;
-  top: 0;
-  left: 50%;
-  translate: -50%;
+  width: 100%;
   z-index: 1;
 }
 .menu ul,
@@ -141,20 +136,6 @@ button:hover {
   padding: 1rem;
   border: 2px solid var(--secondary-color);
   margin-right: 1rem;
-}
-
-/* Home-page */
-
-.advertisement {
-  display: grid;
-  grid-template-columns: 1fr;
-
-  gap: 1em;
-}
-.advertisement div {
-  border: 2px solid var(--primary-color);
-  height: 15em;
-  border-radius: 0.5em;
 }
 
 /* OneProduct */
@@ -414,169 +395,158 @@ button:hover {
 
 /* front image VR */
 .front-vr {
-	box-sizing: border-box;
-	display: flex;
+  box-sizing: border-box;
+  display: flex;
 }
 
 .front-img {
-	background-image: url("https://i0.wp.com/4experience.co/wp-content/uploads/2022/07/cover-vr-games-augmented-reality-players-are-ready-high-quality-photo-1.jpg?resize=1080%2C675&ssl=1");
-	background-size: cover;
-	background-position: center;
-	border-radius: 0.3em;
-	width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-image: url("https://i0.wp.com/4experience.co/wp-content/uploads/2022/07/cover-vr-games-augmented-reality-players-are-ready-high-quality-photo-1.jpg?resize=1080%2C675&ssl=1");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.3em;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .front-vr h2 {
-	color: var(--font-color);
-	font-size: 2.7em;
-	margin: 0.2em;
-	padding: 6em;
+  color: var(--font-color);
+  font-size: 2.7em;
 }
 
 /* advertisement*/
 
 .advertisement {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 1em;
-  }
-  .advertisement > div {
-	border: 2px solid var(--primary-color);
-	height: 15em;
-	border-radius: 0.3em;
-  }
-  
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+
+.advertisement > div {
+  border: 2px solid var(--primary-color);
+  height: 15em;
+  border-radius: 0.3em;
+}
 
 .advertisement a {
-	border: 1px solid var(--secondary-color);
-	background-color: aliceblue;
-	width: 7em;
-	border-radius: 0.3em;
-	padding: 0.2em;
-	text-align: center;
-	text-decoration: none;
-	margin: 0.3em;
-	
-} 
+  border: 1px solid var(--secondary-color);
+  background-color: var(--font-color);
+  width: 7em;
+  border-radius: 0.3em;
+  padding: 0.2em;
+  text-align: center;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
 .advertisement a:hover {
-	background-color: lightgrey;
+  background-color: var(--primary-color);
 }
 
 .new-meta-quest {
-	background-image: url("https://www.m3.se/wp-content/uploads/2023/06/New-Project-2023-06-01T170931.863.jpg?quality=50&strip=all");
-	background-size: cover;
-	background-position: center;
-	display: flex;
-	box-sizing: border-box;
-	flex-direction: column;
-	justify-content: space-between;
-	border-radius: 0.3em;
+  background-image: url("https://www.m3.se/wp-content/uploads/2023/06/New-Project-2023-06-01T170931.863.jpg?quality=50&strip=all");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.3em;
 }
 .new-meta-quest div {
-	display: flex;
-    justify-content: space-between;
-	padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  align-items: flex-end;
 }
 .new-meta-quest h2 {
-	color: var(--font-color);
-	font-size: 2.7em;
-	margin: 0.2em;
-	text-align: center;
+  color: var(--font-color);
+  font-size: 2.7em;
+  margin: 0.2em;
+  text-align: center;
 }
 .new-meta-quest .meta-money {
-	color: var(--font-color);
-	font-size: 2em;
-	width: 6em;
-	border-radius: 0.2em;
-	
+  color: var(--font-color);
+  font-size: 2em;
+  width: 6em;
+  border-radius: 0.2em;
 }
 
 .mega-sale {
-	background-image: url("https://i.redd.it/1fm6wq91onz91.png");
-	background-size: cover;
-	background-position: center;
-	display: flex;
-	box-sizing: border-box;
-	flex-direction: column;
-	justify-content: space-between;
-	padding: 1rem;
+  background-image: url("https://i.redd.it/1fm6wq91onz91.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
 }
 .mega-sale h2 {
-	color: var(--primary-color);
-	font-size: 2.7em;
-	background-color: var(--secondary-color);
-	width: 6.5em;
-	border-radius: 0.5em;
-	padding: 0.2em;
-	text-align: center;
-	opacity: 0.6;
+  color: var(--primary-color);
+  font-size: 2.7em;
+  background-color: var(--secondary-color);
+  width: 6.5em;
+  border-radius: 0.5em;
+  padding: 0.2em;
+  text-align: center;
 }
 .mega-sale p {
-	height: 6em;
-	width: 6em;
-	background-color: rgb(50, 70, 246);
-	color: var(--font-color);
-	border-radius: 100%;
-	padding: 1.5em;
-	text-align: center;
-	opacity: 0.6;
-	align-self: end;
-	
+  height: 6em;
+  width: 6em;
+  background-color: var(--secondary-color);
+  color: var(--font-color);
+  border-radius: 100%;
+  padding: 1.5em;
+  text-align: center;
+  align-self: end;
 }
 
 .latest-game {
-	background-image: url("https://pwimages-a.akamaihd.net/arc/c4/ef/c4efd794fdc320209bf1e6a8525194e61460161974.png");
-	background-size:cover;
-	background-position: top;
-	background-repeat: no-repeat;
-	display: flex;
-	box-sizing: border-box;
-	align-items: flex-end;
-	justify-content: space-between;
-	padding: 1rem;
-	margin-top: 1.5em;
-
+  background-image: url("https://pwimages-a.akamaihd.net/arc/c4/ef/c4efd794fdc320209bf1e6a8525194e61460161974.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  box-sizing: border-box;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-top: 1.5em;
 }
 .latest-game h2 {
-	color: var(--font-color);
-	font-size: 2.7em;
-	
+  color: var(--font-color);
+  font-size: 2.7em;
 }
-
 
 /* Custumer */
 
 .custumer-container {
-	box-sizing: border-box;
-	display: flex;
-	flex-wrap: wrap;
-	border: 1px solid black;
-	border-radius: 0.3em;
-	background-color: rgb(168, 165, 184);
-	margin-top: 1.5em;
-	padding: 1em;
-	
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  border-radius: 0.3em;
+  background-color: rgb(168, 165, 184);
+  margin-top: 1.5em;
+  padding: 1em;
 }
 
-
-.custumer-container img.icon-1, .custumer-container img.icon-2, .custumer-container img.icon-3 {
-	width: 60px;
-	height: 60px;
-	
+.custumer-container img.icon-1,
+.custumer-container img.icon-2,
+.custumer-container img.icon-3 {
+  width: 60px;
+  height: 60px;
 }
 
-
-.custumer-1, .custumer-2, .custumer-3 {
-	display: flex;
-	padding: 1em;
-	gap: 1em;
-	width: 100%;
-	
+.custumer-1,
+.custumer-2,
+.custumer-3 {
+  display: flex;
+  padding: 1em;
+  gap: 1em;
+  width: 100%;
 }
-
 
 /* Footer */
 
@@ -584,50 +554,64 @@ footer {
   background-color: var(--secondary-color);
   color: var(--font-color);
   display: flex;
-  padding: 2rem 1rem 5rem 1rem;
+  padding: 1rem;
   justify-content: space-around;
   flex-direction: column;
+  gap: 2rem;
 }
+
 footer > p {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
 }
+
 footer img {
   object-fit: contain;
   height: 45px;
 }
+
 footer .column {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
+
 footer section {
   display: grid;
   gap: 1rem;
 }
 
-footer p {
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
-}
 footer ul {
   list-style: none;
 }
-.socialmedia {
+
+.bottom-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: flex-end;
+}
+
+/* .socialmedia {
   margin-top: 100px;
 }
+
 .sweden {
   display: flex;
   justify-content: end;
   margin-right: 30px;
-}
+} */
 
 /* Media Query */
 
 @media (min-width: 500px) {
   .other-products .grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer .column {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -646,10 +630,6 @@ footer ul {
   }
   .about div p:nth-of-type(2) {
     text-align: start;
-  }
-
-  main {
-    padding: 5rem 2rem;
   }
 
   .product-info {
@@ -677,6 +657,10 @@ footer ul {
   }
   .advertisement div:first-child {
     grid-column: span 2;
+  }
+
+  footer .column {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
