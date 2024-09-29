@@ -412,138 +412,171 @@ button:hover {
   object-fit: contain;
 }
 
-/* advertisement*/
-
-.front-vr h2 {
-  color: var(--font-color);
-  font-size: 2.7em;
-  margin: 0.2em;
-  padding: 6em;
-}
-
+/* front image VR */
 .front-vr {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+	box-sizing: border-box;
+	display: flex;
 }
 
 .front-img {
-  background-image: url("https://i0.wp.com/4experience.co/wp-content/uploads/2022/07/cover-vr-games-augmented-reality-players-are-ready-high-quality-photo-1.jpg?resize=1080%2C675&ssl=1");
-  background-size: cover;
-  background-position: center;
-  border-radius: 0.5em;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	background-image: url("https://i0.wp.com/4experience.co/wp-content/uploads/2022/07/cover-vr-games-augmented-reality-players-are-ready-high-quality-photo-1.jpg?resize=1080%2C675&ssl=1");
+	background-size: cover;
+	background-position: center;
+	border-radius: 0.3em;
+	width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.front-vr h2 {
+	color: var(--font-color);
+	font-size: 2.7em;
+	margin: 0.2em;
+	padding: 6em;
 }
 
+/* advertisement*/
+
+.advertisement {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1em;
+  }
+  .advertisement > div {
+	border: 2px solid var(--primary-color);
+	height: 15em;
+	border-radius: 0.3em;
+  }
+  
+
 .advertisement a {
-  border: 1px solid var(--secondary-color);
-  background-color: aliceblue;
-  width: 7em;
-  border-radius: 0.3em;
-  padding: 0.2em;
-  text-align: center;
-  text-decoration: none;
-  margin: 0.3em;
+	border: 1px solid var(--secondary-color);
+	background-color: aliceblue;
+	width: 7em;
+	border-radius: 0.3em;
+	padding: 0.2em;
+	text-align: center;
+	text-decoration: none;
+	margin: 0.3em;
+	
+} 
+.advertisement a:hover {
+	background-color: lightgrey;
 }
+
 .new-meta-quest {
-  background-image: url("https://www.m3.se/wp-content/uploads/2023/06/New-Project-2023-06-01T170931.863.jpg?quality=50&strip=all");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border-radius: 0.2em;
+	background-image: url("https://www.m3.se/wp-content/uploads/2023/06/New-Project-2023-06-01T170931.863.jpg?quality=50&strip=all");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	box-sizing: border-box;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 0.3em;
+}
+.new-meta-quest div {
+	display: flex;
+    justify-content: space-between;
+	padding: 0.5rem;
 }
 .new-meta-quest h2 {
-  color: var(--font-color);
-  font-size: 2.7em;
-  margin: 0.2em;
+	color: var(--font-color);
+	font-size: 2.7em;
+	margin: 0.2em;
+	text-align: center;
 }
 .new-meta-quest .meta-money {
-  color: var(--font-color);
-  font-size: 2em;
-  width: 6em;
-  border-radius: 0.2em;
-  align-self: flex-end;
-  margin-right: 1.3em;
-  margin-top: 2em;
+	color: var(--font-color);
+	font-size: 2em;
+	width: 6em;
+	border-radius: 0.2em;
+	
 }
+
 .mega-sale {
-  background-image: url("https://i.redd.it/1fm6wq91onz91.png");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  box-sizing: border-box;
-  flex-direction: column;
+	background-image: url("https://i.redd.it/1fm6wq91onz91.png");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	box-sizing: border-box;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 1rem;
 }
 .mega-sale h2 {
-  color: var(--primary-color);
-  font-size: 2.7em;
-  margin: 0.4em;
-  background-color: var(--secondary-color);
-  width: 6.5em;
-  border-radius: 0.5em;
-  padding: 0.2em;
-  text-align: center;
-  opacity: 0.6;
+	color: var(--primary-color);
+	font-size: 2.7em;
+	background-color: var(--secondary-color);
+	width: 6.5em;
+	border-radius: 0.5em;
+	padding: 0.2em;
+	text-align: center;
+	opacity: 0.6;
 }
 .mega-sale p {
-  height: 6em;
-  width: 6em;
-  background-color: var(--secondary-color);
-  color: var(--font-color);
-  border-radius: 100%;
-  padding: 1.5em;
-  text-align: center;
-  opacity: 0.9;
-  align-self: end;
-  margin-right: 6.5em;
+	height: 6em;
+	width: 6em;
+	background-color: rgb(50, 70, 246);
+	color: var(--font-color);
+	border-radius: 100%;
+	padding: 1.5em;
+	text-align: center;
+	opacity: 0.6;
+	align-self: end;
+	
 }
 
 .latest-game {
-  background-image: url("https://pwimages-a.akamaihd.net/arc/c4/ef/c4efd794fdc320209bf1e6a8525194e61460161974.png");
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  display: flex;
-  box-sizing: border-box;
-  align-items: flex-end;
-  justify-content: space-between;
-  padding: 1rem;
-  margin-top: 1.5em;
+	background-image: url("https://pwimages-a.akamaihd.net/arc/c4/ef/c4efd794fdc320209bf1e6a8525194e61460161974.png");
+	background-size:cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	display: flex;
+	box-sizing: border-box;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding: 1rem;
+	margin-top: 1.5em;
+
 }
 .latest-game h2 {
-  color: var(--font-color);
-  font-size: 2.7em;
+	color: var(--font-color);
+	font-size: 2.7em;
+	
 }
 
-/* Support */
 
-.support-container {
-  box-sizing: border-box;
-  display: flex;
-}
-.support-container p {
-  text-align: center;
-  padding: 1.5em;
-  font-size: 2.5em;
-  border-radius: 0.2em;
-  margin-top: 0.5em;
-  background-color: var(--primary-color);
+/* Custumer */
+
+.custumer-container {
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid black;
+	border-radius: 0.3em;
+	background-color: rgb(168, 165, 184);
+	margin-top: 1.5em;
+	padding: 1em;
+	
 }
 
-.support {
-  border: 1px solid var(--secondary-color);
-  flex-grow: 2;
+
+.custumer-container img.icon-1, .custumer-container img.icon-2, .custumer-container img.icon-3 {
+	width: 60px;
+	height: 60px;
+	
 }
-.app-support {
-  border: 1px solid var(--secondary-color);
-  flex-grow: 1;
-  margin-left: 0.2em;
+
+
+.custumer-1, .custumer-2, .custumer-3 {
+	display: flex;
+	padding: 1em;
+	gap: 1em;
+	width: 100%;
+	
 }
+
 
 /* Footer */
 
