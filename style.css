@@ -363,7 +363,7 @@ button:hover {
   padding-top: 45px;
   overflow: auto;
   justify-content: space-around;
-  padding: 1rem;
+  padding: 1rem 0;
   margin: 1rem 0;
   text-align: center;
 }
@@ -525,7 +525,7 @@ button:hover {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid black;
+  border: 2px solid var(--secondary-color);
   border-radius: 0.3em;
   background-color: rgb(168, 165, 184);
   margin-top: 1.5em;
@@ -546,6 +546,7 @@ button:hover {
   padding: 1em;
   gap: 1em;
   width: 100%;
+  align-items: center;
 }
 
 /* Footer */
@@ -575,6 +576,12 @@ footer .column {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+
+  p {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
 }
 
 footer section {
@@ -589,19 +596,8 @@ footer ul {
 .bottom-footer {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
   align-items: flex-end;
 }
-
-/* .socialmedia {
-  margin-top: 100px;
-}
-
-.sweden {
-  display: flex;
-  justify-content: end;
-  margin-right: 30px;
-} */
 
 /* Media Query */
 
