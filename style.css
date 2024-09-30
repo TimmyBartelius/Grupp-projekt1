@@ -117,6 +117,7 @@ button:hover {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 300;
+  padding-bottom: 1rem;
 }
 .team-member img {
   width: 90%;
