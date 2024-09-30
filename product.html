@@ -1,97 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-	
-	<link rel="icon" href="./assets/pear.png" />
-	
-	<title>Product</title>
-	
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<nav class="menu">
-		<a href="index.html"><img src="./assets/pear.png" alt="logotype"></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
 
-		<ul>
-			<li><a href="product.html">Product</a></li>
-			<li><a href="about.html">About</a></li>
-		</ul>
+    <link rel="icon" href="./assets/pear.png" />
 
-		<div>
-			<img src="./assets/search.png" alt="search">
-			<a href="cart.html"><img src="./assets/shopping-bag.png" alt="shopping cart" /></a>
-		</div>
-	</nav>
+    <title>Product</title>
 
-	<main class="Products">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="menu">
+      <a href="index.html"><img src="./assets/pear.png" alt="logotype" /></a>
 
-	<nav class="meny-ovan">
+      <ul>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
 
-		<div class="meny-ovan1">
-			<img class="meny-ovan-bild1" src="assets/Meta-Quest-2-Transparent.png" alt="VR HEADSET">
-			<p>META QUEST</p>
-		</div>
+      <div>
+        <a href="cart.html"><img src="./assets/shopping-cart.png" alt="shopping cart" /></a>
+      </div>
+    </nav>
 
-		<div class="meny-ovan2">
-				<img class="meny-ovan-bild2" src="assets/meta-quest-pro.png" alt="VR HEADSET">
-				<p>META QUEST PRO</p>
-		</div>
+    <main class="product-page">
+      <nav class="meny-slide">
+        <div>
+          <img src="assets/primax-menu-img.jpg" alt="Meta Quest" />
+          <p>VR Headsets</p>
+        </div>
 
-		<div class="meny-ovan3">
-				<img class="meny-ovan-bild3" src="assets/meta-quest-3-1.png" alt="VR HEADSET">
-				<p>META QUEST 3</p>
-		</div>
+        <div>
+          <img src="assets/Produkt 6.png" alt="DPVR" />
+          <p>Headphones</p>
+        </div>
 
-	</nav>
-		
-<div class="produkt1">
+        <div>
+          <img src="assets/produkt 5.png" alt="HTC" />
+          <p>HTC</p>
+        </div>
 
-	<img class="bild1" src="assets/Meta-Quest-2-Transparent.png" alt="produkt1">
-	<h2 class="MetaQuest">Meta Quest</h2>
-	<p class="pris1"> <b>Starting at SEK 6,990</b></p>
-	<button class="Product-button">Learn more</button>
-	<ul class="Lista"></ul>
-		<li> Mixed-reality experiences, inclusive of immersive VR</li>
-		<li>Highest resolution infinity display 25PPD</li>
-		<li>Snapdragon&reg; XR2 Gen2</li>
-		<li>More customizable and adjustable fit</li>
-	</ul>
-</div>
+        <div>
+          <img src="assets/produkt 4.png" alt="VR 360" />
+          <p>VR 360</p>
+        </div>
+      </nav>
 
-<div class="produkt2">
+      <section class="products">
+        <div>
+          <img class="bild" src="assets/meta-menu-img.png" alt="produkt1" />
+          <h2 class="MetaQuest">Pear Quest</h2>
+          <p class="pris"><b>Starting at SEK 6,990</b></p>
+          <button onclick="window.location.href='./oneProduct.html'" class="Product-button">Learn more</button>
 
-	<img class="bild2" src="assets/meta-quest-pro.png" alt="Produkt2">
-	<h2 class="Meta-Quest-Pro"> Meta Quest Pro</h2>
-	<p class="pris2"> <b>Starting at SEK 13,829.99</b></p>
-	<button class="Product-button">Learn more</button>
-	<ul class="Lista">
-		<li> Mixed-reality experiences, inclusive of immersive VR</li>
-		<li>Highest resolution infinity display 25PPD</li>
-		<li>Snapdragon&reg; XR2 Gen2</li>
-		<li>More customizable and adjustable fit</li>
-	</ul>
-</div>
+          <ul class="lista">
+            <li>Mixed-reality experiences, inclusive of immersive VR</li>
+            <li>Highest resolution infinity display 25PPD</li>
+            <li>Snapdragon&reg; XR2 Gen2</li>
+            <li>More customizable and adjustable fit</li>
+          </ul>
+        </div>
 
-<div class="produkt3">
+        <div>
+          <img class="bild" src="assets/METAQUPR_1200x1200.png" alt="Produkt2" />
+          <h2 class="Meta-Quest-Pro">Pear Quest Pro</h2>
+          <p class="pris"><b>Starting at SEK 13,829.99</b></p>
+          <button class="Product-button">Learn more</button>
 
-	<img class="bild3" src="assets/meta-quest-3-1.png" alt="Produkt3">
-	<h2 class="Meta-Quest-3"> Meta Quest 3</h2>
-	<p class="pris3"> <b>Starting at SEK 6,990</b></p>
-	<button class="Product-button">Learn more</button>
-	<ul class="Lista"></ul>
-		<li> Mixed-reality experiences, inclusive of immersive VR</li>
-		<li>Highest resolution infinity display 25PPD</li>
-		<li>Snapdragon&reg; XR2 Gen2</li>
-		<li>More customizable and adjustable fit</li>
-	</ul>
-</div>
+          <ul class="lista">
+            <li>Mixed-reality experiences, inclusive of immersive VR</li>
+            <li>Highest resolution infinity display 25PPD</li>
+            <li>Snapdragon&reg; XR2 Gen2</li>
+            <li>More customizable and adjustable fit</li>
+          </ul>
+        </div>
 
+        <div>
+          <img class="bild" src="assets/meta-quest-3-1.png" alt="Produkt3" />
+          <h2 class="Meta-Quest-3">Pear Quest 3</h2>
+          <p class="pris"><b>Starting at SEK 6,990</b></p>
+          <button class="Product-button">Learn more</button>
 
-	</main>
-</body>
+          <ul class="lista">
+            <li>Mixed-reality experiences, inclusive of immersive VR</li>
+            <li>Highest resolution infinity display 25PPD</li>
+            <li>Snapdragon&reg; XR2 Gen2</li>
+            <li>More customizable and adjustable fit</li>
+          </ul>
+        </div>
+
+        <div>
+          <img class="bild" src="assets/produkt 4.png" alt="produkt4" />
+          <h2 class="DPVR">DPVR</h2>
+          <p class="pris"><b>Starting at SEK 5,800</b></p>
+          <button class="Product-button">Learn more</button>
+
+          <ul class="lista">
+            <li>90 degrees flip-up design</li>
+            <li>116 degrees FOV(Field of view)</li>
+            <li>Native 120 Hz Refresh Rate</li>
+            <li>285g weight without headstrap</li>
+          </ul>
+        </div>
+
+        <div>
+          <img class="bild" src="assets/produkt 5.png" alt="produkt5" />
+          <h2 class="VR360LABS">VR 360 LABS</h2>
+          <p class="pris"><b>Starting at SEK 10,899</b></p>
+          <button class="Product-button">Learn more</button>
+
+          <ul class="lista">
+            <li>Cutting edge technology</li>
+            <li>155 degrees FOV(Field Of View)</li>
+            <li>Native 120 Hz Refresh Rate</li>
+            <li>Made in Sweden</li>
+          </ul>
+        </div>
+
+        <div>
+          <img class="bild" src="assets/Produkt 6.png" alt="produkt6" />
+          <h2 class="DPVR2">DPVR2</h2>
+          <p class="pris"><b>Starting at SEK 8,900</b></p>
+          <button class="Product-button">Learn more</button>
+
+          <ul class="lista">
+            <li>Lightweight design</li>
+            <li>Hardened shell for durability</li>
+            <li>Extended battery</li>
+            <li>Market-leading technology</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="column">
+        <section>
+          <p>About us</p>
+          <ul>
+            <li>Career</li>
+            <li>More information</li>
+            <li>Cooperation</li>
+            <li>Customer club</li>
+          </ul>
+        </section>
+
+        <section>
+          <p>Open Hours</p>
+
+          <ul class="open-hours">
+            <li>Monday - Friday</li>
+            <li>09:00 - 17:00</li>
+            <li>Saturday</li>
+            <li>10:00 - 15:00</li>
+            <li>Sunday</li>
+            <li>CLOSED</li>
+          </ul>
+        </section>
+
+        <section>
+          <p>Help & Contact</p>
+          <ul>
+            <li>Common question</li>
+            <li>Payment / Security</li>
+            <li>Delivery time</li>
+          </ul>
+        </section>
+
+        <section>
+          <p>Contact info:</p>
+          <ul>
+            <li>Address: Skolgatan 15</li>
+            <li>Email: info@pearvr.se</li>
+            <li>Phone: 033-1007676</li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="bottom-footer">
+        <div class="socialmedia">
+          <img src="./assets/icons8-facebook-50.png" alt="facebook" />
+          <img src="./assets/icons8-instagram-old-50.png" alt="Instagram" />
+          <img src="./assets/icons8-x-50.png" alt="Twitter" />
+        </div>
+        <div class="sweden">
+          <p>Sweden</p>
+        </div>
+      </section>
+    </footer>
+  </body>
 </html>
