@@ -15,16 +15,12 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   font-size: 1rem;
-  font-size: clamp(
-    0.8rem,
-    0.8571428571428572rem + 0.7142857142857143vw,
-    1.25rem
-  );
+  font-size: clamp(0.8rem, 0.8571428571428572rem + 0.7142857142857143vw, 1.25rem);
   box-shadow: -10px 0 20px rgba(0, 0, 0, 0.2), 10px 0 20px rgba(0, 0, 0, 0.2);
 }
 
 main {
-  padding: 5rem 0.5rem;
+  padding: 1rem;
   background-color: var(--primary-color);
 }
 
@@ -59,12 +55,7 @@ button:hover {
   justify-content: space-around;
   align-items: center;
   padding: 0.5rem;
-  width: 1440px;
-  max-width: 100%;
-  position: fixed;
-  top: 0;
-  left: 50%;
-  translate: -50%;
+  width: 100%;
   z-index: 1;
 }
 .menu ul,
@@ -105,7 +96,7 @@ button:hover {
 .about div {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 0 1rem;
 }
 .about div p:first-of-type {
   font-size: 1rem;
@@ -116,7 +107,6 @@ button:hover {
 .about div p:nth-of-type(2) {
   padding: 1rem 0;
   max-width: 650px;
-  text-align: center;
 }
 
 .team-presentation {
@@ -129,11 +119,14 @@ button:hover {
 .team-presentation div {
   position: absolute;
   top: 1rem;
-  left: 1rem;
   color: var(--secondary-color);
   display: flex;
   align-items: start;
   gap: 1rem;
+
+  h1 {
+    font-size: 1.4rem;
+  }
 }
 .team-presentation h1,
 .team-presentation p {
@@ -141,20 +134,6 @@ button:hover {
   padding: 1rem;
   border: 2px solid var(--secondary-color);
   margin-right: 1rem;
-}
-
-/* Home-page */
-
-.advertisement {
-  display: grid;
-  grid-template-columns: 1fr;
-
-  gap: 1em;
-}
-.advertisement div {
-  border: 2px solid var(--primary-color);
-  height: 15em;
-  border-radius: 0.5em;
 }
 
 /* OneProduct */
@@ -259,9 +238,14 @@ button:hover {
 
 /* style for cart-page */
 
+.header {
+  padding-bottom: 1rem;
+}
+
 .product-checkout-container {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 
 .container-product img {
@@ -276,7 +260,6 @@ button:hover {
   background-color: white;
   border-radius: 0.5em;
   padding: 1em;
-  margin: 1em;
 }
 
 .product-descript-column {
@@ -290,24 +273,24 @@ button:hover {
   flex-direction: column;
   background-color: white;
   border-radius: 0.5em;
-  padding: 0.5em;
-  margin: 1em 0.5em 0.5em 0.5em;
+  padding: 1rem;
   align-items: center;
   height: fit-content;
+  gap: 1rem;
 }
 
 .remove-add-container {
   display: flex;
   flex-direction: row;
   justify-content: end;
-  height: 9em;
-  align-items: end;
+  align-items: center;
   flex-shrink: 1;
+  gap: 1rem;
+  padding: 8rem 1rem 0;
 }
 
 .product-amount {
   font-weight: bold;
-  margin: 2em;
   justify-content: start;
   width: 2em;
 }
@@ -320,7 +303,6 @@ button:hover {
 
 .price-container {
   display: flex;
-  margin-bottom: 1em;
 }
 
 .sales-tax,
@@ -346,14 +328,16 @@ button:hover {
   font-weight: bold;
 }
 
-.cart-page button {
+/* .cart-page button {
   margin: 2em 0 2em 2em;
-}
+} */
 
 .cart-bottom {
   display: flex;
-  justify-content: space-between;
-  /* style for cart-page */
+  justify-content: center;
+  padding-top: 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .ghost-cart {
@@ -382,17 +366,28 @@ button:hover {
   padding-top: 45px;
   overflow: auto;
   justify-content: space-around;
-  padding: 1rem;
+  padding: 1rem 0;
   margin: 1rem 0;
   text-align: center;
 }
 .meny-slide div {
   padding: 5px;
+  border: 2px solid transparent;
+}
+.meny-slide div:first-child {
+  transform: scale(1.1);
+  cursor: pointer;
+  opacity: 0.8;
+}
+.meny-slide div:hover:not(:first-child) {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 .meny-slide img {
   display: flex;
   height: 100px;
   object-fit: contain;
+  filter: grayscale(1);
 }
 .products {
   display: grid;
@@ -412,65 +407,96 @@ button:hover {
   object-fit: contain;
 }
 
-/* advertisement*/
-
-.front-vr h2 {
+/* front image VR */
+.home-page button {
+  color: var(--secondary-color);
+  background-color: var(--font-color);
+}
+.home-page button:hover {
   color: var(--font-color);
-  font-size: 2.7em;
-  margin: 0.2em;
-  padding: 6em;
+  background-color: var(--secondary-color);
+  border: 2px solid var(--font-color);
 }
 
 .front-vr {
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
 }
 
 .front-img {
   background-image: url("https://i0.wp.com/4experience.co/wp-content/uploads/2022/07/cover-vr-games-augmented-reality-players-are-ready-high-quality-photo-1.jpg?resize=1080%2C675&ssl=1");
   background-size: cover;
   background-position: center;
-  border-radius: 0.5em;
+  border-radius: 0.3em;
+  width: 100%;
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.front-vr h2 {
+  color: var(--font-color);
+  font-size: 2.7em;
+  text-align: center;
+}
+
+/* advertisement*/
+
+.advertisement {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+
+.advertisement > div {
+  border: 2px solid var(--primary-color);
+  height: 15em;
+  border-radius: 0.3em;
+}
 
 .advertisement a {
   border: 1px solid var(--secondary-color);
-  background-color: aliceblue;
+  background-color: var(--font-color);
   width: 7em;
   border-radius: 0.3em;
   padding: 0.2em;
   text-align: center;
   text-decoration: none;
-  margin: 0.3em;
+  color: var(--secondary-color);
 }
+.advertisement a:hover {
+  background-color: var(--primary-color);
+}
+
 .new-meta-quest {
   background-image: url("https://www.m3.se/wp-content/uploads/2023/06/New-Project-2023-06-01T170931.863.jpg?quality=50&strip=all");
   background-size: cover;
   background-position: center;
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: 0.2em;
+  border-radius: 0.3em;
+}
+.new-meta-quest div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  align-items: flex-end;
 }
 .new-meta-quest h2 {
   color: var(--font-color);
   font-size: 2.7em;
   margin: 0.2em;
+  text-align: center;
 }
 .new-meta-quest .meta-money {
   color: var(--font-color);
   font-size: 2em;
   width: 6em;
   border-radius: 0.2em;
-  align-self: flex-end;
-  margin-right: 1.3em;
-  margin-top: 2em;
 }
+
 .mega-sale {
   background-image: url("https://i.redd.it/1fm6wq91onz91.png");
   background-size: cover;
@@ -478,17 +504,18 @@ button:hover {
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: flex-start;
 }
 .mega-sale h2 {
   color: var(--primary-color);
   font-size: 2.7em;
-  margin: 0.4em;
   background-color: var(--secondary-color);
   width: 6.5em;
   border-radius: 0.5em;
   padding: 0.2em;
   text-align: center;
-  opacity: 0.6;
 }
 .mega-sale p {
   height: 6em;
@@ -498,9 +525,7 @@ button:hover {
   border-radius: 100%;
   padding: 1.5em;
   text-align: center;
-  opacity: 0.9;
   align-self: end;
-  margin-right: 6.5em;
 }
 
 .latest-game {
@@ -520,29 +545,34 @@ button:hover {
   font-size: 2.7em;
 }
 
-/* Support */
+/* Custumer */
 
-.support-container {
+.custumer-container {
   box-sizing: border-box;
   display: flex;
-}
-.support-container p {
-  text-align: center;
-  padding: 1.5em;
-  font-size: 2.5em;
-  border-radius: 0.2em;
-  margin-top: 0.5em;
-  background-color: var(--primary-color);
+  flex-wrap: wrap;
+  border: 2px solid var(--secondary-color);
+  border-radius: 0.3em;
+  background-color: #5a70a4;
+  margin-top: 1.5em;
+  padding: 1em;
 }
 
-.support {
-  border: 1px solid var(--secondary-color);
-  flex-grow: 2;
+.custumer-container img.icon-1,
+.custumer-container img.icon-2,
+.custumer-container img.icon-3 {
+  width: 60px;
+  height: 60px;
 }
-.app-support {
-  border: 1px solid var(--secondary-color);
-  flex-grow: 1;
-  margin-left: 0.2em;
+
+.custumer-1,
+.custumer-2,
+.custumer-3 {
+  display: flex;
+  padding: 1em;
+  gap: 1em;
+  width: 100%;
+  align-items: center;
 }
 
 /* Footer */
@@ -551,43 +581,66 @@ footer {
   background-color: var(--secondary-color);
   color: var(--font-color);
   display: flex;
-  padding: 2rem 1rem 5rem 1rem;
+  padding: 1rem;
   justify-content: space-around;
   flex-direction: column;
+  gap: 2rem;
 }
+
 footer > p {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
 }
+
 footer img {
   object-fit: contain;
   height: 45px;
 }
+
 footer .column {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1rem;
+
+  p {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
 }
+
 footer section {
   display: grid;
   gap: 1rem;
 }
 
-footer p {
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
-}
 footer ul {
   list-style: none;
+
+  li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
 }
-.socialmedia {
-  margin-top: 100px;
+
+.open-hours li:nth-child(even) {
+  padding-bottom: 0.5rem;
 }
-.sweden {
+.open-hours li:hover {
+  cursor: default;
+  text-decoration: none;
+}
+
+.bottom-footer {
   display: flex;
-  justify-content: end;
-  margin-right: 30px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.socialmedia img:hover {
+  cursor: pointer;
+  scale: 1.1;
 }
 
 /* Media Query */
@@ -595,6 +648,14 @@ footer ul {
 @media (min-width: 500px) {
   .other-products .grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer .column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cart-bottom {
+    justify-content: space-between;
   }
 }
 
@@ -613,10 +674,6 @@ footer ul {
   }
   .about div p:nth-of-type(2) {
     text-align: start;
-  }
-
-  main {
-    padding: 5rem 2rem;
   }
 
   .product-info {
@@ -644,6 +701,10 @@ footer ul {
   }
   .advertisement div:first-child {
     grid-column: span 2;
+  }
+
+  footer .column {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
