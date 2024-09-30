@@ -607,12 +607,30 @@ footer section {
 
 footer ul {
   list-style: none;
+
+  li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.open-hours li:nth-child(even) {
+  padding-bottom: 0.5rem;
+}
+.open-hours li:hover {
+  cursor: default;
+  text-decoration: none;
 }
 
 .bottom-footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.socialmedia img:hover {
+  cursor: pointer;
+  scale: 1.1;
 }
 
 /* Media Query */
@@ -623,7 +641,7 @@ footer ul {
   }
 
   footer .column {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .cart-bottom {
@@ -676,7 +694,7 @@ footer ul {
   }
 
   footer .column {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
