@@ -669,4 +669,11 @@ footer ul {
   .advertisement div:first-child {
     grid-column: span 2;
   }
+  
+}
+@media screen and (max-width:1000px)
+ {
+	footer .column{display:flex;
+
+	flex-direction: column;}
 }
